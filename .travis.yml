@@ -8,13 +8,12 @@ install:
   - go get github.com/gopherjs/gopherjs
 
 script:
-  - mv $GOPATH/bin ~/bin
   - go test -v github.com/j7b/jsplayground/...
   - gopherjs install github.com/j7b/jsplayground
   - jsplayground
   - mv /tmp/jsplayground-*/pkg .
   - mv $GOPATH/bin/*.* .
-  - rm -rf $GOPATH ~/bin
+  - rm -rf $GOPATH
 
 deploy:
   provider: pages
