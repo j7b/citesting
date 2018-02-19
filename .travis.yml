@@ -8,7 +8,7 @@ install:
   - go get github.com/gopherjs/gopherjs
 
 script:
-  - gopherjs install github.com/j7b/jsplayground
+  - gopherjs get github.com/j7b/jsplayground
   - jsgen
   - mkdir $HOME/output
   - cd $HOME/output
