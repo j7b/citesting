@@ -14,7 +14,7 @@ script:
   - cd $HOME/output
   - mv /tmp/jsplayground-*/pkg .
   - mv $GOPATH/bin/*.* .
-  - rm -rf $GOPATH
+  - # rm -rf $GOPATH
 
 deploy:
   provider: pages
