@@ -10,8 +10,8 @@ install:
 script:
   - gopherjs get github.com/j7b/jsplayground
   - jsgen
-  - mkdir ~/output
-  - cd ~/output
+  - mkdir output
+  - cd output
   - mv /tmp/jsplayground-*/pkg .
   - mv $GOPATH/bin/*.* .
   - # rm -rf $GOPATH
