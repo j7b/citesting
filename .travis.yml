@@ -4,12 +4,10 @@ go:
   - 1.9
 
 install:
-  - go get -v github.com/j7b/jsplayground
   - go get github.com/j7b/jsgen
   - go get github.com/gopherjs/gopherjs
 
 script:
-  - go test -v github.com/j7b/jsplayground/...
   - gopherjs install github.com/j7b/jsplayground
   - jsgen
   - mkdir $HOME/output
