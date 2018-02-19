@@ -9,7 +9,7 @@ install:
 
 script:
   - gopherjs get github.com/j7b/jsplayground
-  - jsgen github.com/hajimehoshi/ebiten github.com/gopherjs/gopherjs/js
+  - jsgen github.com/hajimehoshi/ebiten github.com/hajimehoshi/ebiten/ebitenutil github.com/gopherjs/gopherjs/js
   - mkdir output
   - cp index.* output
   - cp playground.css output
