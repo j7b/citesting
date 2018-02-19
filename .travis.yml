@@ -11,6 +11,8 @@ script:
   - gopherjs get github.com/j7b/jsplayground
   - jsgen
   - mkdir output
+  - cp index.* output
+  - cp playground.css output
   - cd output
   - mv /tmp/jsplayground-*/pkg .
   - mv $GOPATH/bin/*.* .
